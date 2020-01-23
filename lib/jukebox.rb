@@ -56,14 +56,13 @@ songs = [
     input = 0
     while input != "exit"
     input = gets.strip
-    case input
-      when "help"
+    if input == "help"
         help
-      when "play"
+      elsif input == "play"
         play(songs)
-      when "list"
+      elsif input == "list"
         list(songs)
-      when "exit"
+      elsif input == "exit"
         exit_jukebox
         exit
       end
