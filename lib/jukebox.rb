@@ -56,7 +56,7 @@ songs = [
     input = 0
     while input != "exit"
     input = gets.strip
-    if input == "help"
+      if input == "help"
         help
       elsif input == "play"
         play(songs)
